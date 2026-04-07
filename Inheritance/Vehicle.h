@@ -3,17 +3,17 @@ File: Vehicle.h
 Topic: Inheritance
 */
 
-#ifndef VEHICLE_H
+#ifndef VEHICLE_H //ensures that the class cannot be defined more than once
 #define VEHICLE_H
 
-#include "UtilitiesFinkelstein.h"
+#include "UtilitiesFinkelstein.h" //personal utilities library included
 
-class Vehicle {
-private:
+class Vehicle { //used for both Car & Truck
+private: //contains member variables
 	string manufacturer;
 	int year;
-public:
-	Vehicle(string, int);
+public: //contains member functions
+	Vehicle(string, int); //Vehicle constructor
 	void setManufacturer(string);
 	void setYear(int);
 	string getManufacturer() const;

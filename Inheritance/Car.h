@@ -6,13 +6,13 @@ Topic: Inheritance
 #ifndef CAR_H
 #define CAR_H
 
-#include "Vehicle.h"
+#include "Vehicle.h" //Vehicle header file included for inheritance & utilities library
 
-class Car : public Vehicle {
-private:
+class Car : public Vehicle { //Car class inherits Vehicle class with : public Vehicle
+private: //contains member variables
 	int doors;
-public:
-	Car(string, int, int);
+public: //contains member functions
+	Car(string, int, int); //Car constructor
 	void setDoors(int);
 	int getDoors() const;
 	void displayInfo() const;
