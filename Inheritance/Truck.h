@@ -13,6 +13,8 @@ private:
 	int capacity;
 public:
 	Truck(string, int, int);
+	void setCapacity(int);
+	int getCapacity() const;
 	void displayInfo() const;
 };
 

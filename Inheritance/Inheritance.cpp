@@ -27,8 +27,8 @@ int main() {
 	cout << "Enter the manufacturer: ";
 	cin.ignore(100, '\n');
 	getline(cin, manufacturer);
-	year = getInt("Enter the year built: ", 1, 9999);
-	int doors = getInt("Enter the number of doors: ", 0, 99);
+	year = getInt("Enter the year built: ", 1, 2100);
+	int doors = getInt("Enter the number of doors: ", 0, 9999);
 	
 	Car carData(manufacturer, year, doors);
 	cout << "\nCar Information" << endl;
@@ -40,7 +40,7 @@ int main() {
 	cout << "Enter the manufacturer: ";
 	cin.ignore(100, '\n');
 	getline(cin, manufacturer);
-	year = getInt("Enter the year built: ", 1, 9999);
+	year = getInt("Enter the year built: ", 1, 2100);
 	int capacity = getInt("Enter the towing capacity: ", 0, 9999);
 
 	Truck truckData(manufacturer, year, capacity);
